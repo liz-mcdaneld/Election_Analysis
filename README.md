@@ -4,7 +4,7 @@
 At the request of a Colorado Board of Election employee the purpose of this election audit of  a local congressional election analysis is to;
 1. Calculate the number of total votes.
 2. Have a complete list of candidates who received votes, and their vote counts and percentages won based upon votes.
-3. View County turnouts on voters, and which count had the largest turnout.
+3. View County turnouts on voters, and which county had the largest turnout.
 4. Determine a candidate winner based upon popular vote.
 
 ## Election Audit Results: 
