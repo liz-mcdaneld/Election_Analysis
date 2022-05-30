@@ -27,11 +27,11 @@ Based on popular vote the winner of this election is Diana DeGette with 272,892 
 
 ## Election Audit Summary
 
-   In summary the code written for this election created a fast and efficient way to tally votes to find the winner of the election campaign. This code can be applied to future congressional elections, or any election data set so that it can be run in a matter of minutes, or even seconds. The code is written with the best practices method using modular code. This means it can be applied to multiple election datasets without changing the code itself, just the paths to the dataset.
+   In summary the code written for this election created a fast and efficient way to tally votes to find the winner of the election campaign. This code can be applied to future congressional elections, or any election data set. The code is written with the best practices method using modular code. This means it can be applied to multiple election datasets without changing the code itself, just the paths to the dataset.
 
    First, we can apply this code to a different dataset with similar structure. To do this we modify the path to the dataset by using the code 
 [file_to_load = os.path.join("..", "Resources", "new_election_dataset.csv")]
-The name of the candidates is extracted from the data using Python code [candidate_name = row[2]]. This means that a list of candidate names is not required, allowing this code to be applied to different candidates. The “row” part of the code references where in the data to search for the name and can be changed to match the data by changing it to read [candidate_name = row [i]] where the value of "i" is replaced by the needed row value; 0, 1, 2, 3 etc.
+The name of the candidates is extracted from the data using Python code [candidate_name = row[2]]. This means that a list of candidate names is not required, allowing this code to be applied to different candidates. The part of the code references the index to search for the candidate name can be changed to match new datasets. This code would read [candidate_name = row [i]] where the value of "i" is replaced by the needed row value; 0, 1, 2, 3 etc.
 
    If there is a name written in and not from the given list, the code:
 [if candidate_name not in candidate_options: 
